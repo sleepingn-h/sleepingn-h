@@ -7,63 +7,13 @@ HTML, CSS, JavaScript 기반의 웹 표준과 웹 접근성 준수를 바탕으�
 지속 가능한 코드를 고민하며, 사용자와 유지보수자의 입장에서 실제 사용성과 효율성 모두를 고려한 개발을 지향합니다.
 
 # Skills
-
-## 📦 Frontend
-
-![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=React&logoColor=000000)
-![Next.js](https://img.shields.io/badge/-Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=ffffff)
-![Vite](https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=ffffff)
-![React Router](https://img.shields.io/badge/-React_Router-CA4245?style=for-the-badge&logo=React-Router&logoColor=ffffff)
+React · Next.js · Vite · React Router  
+Tailwind CSS · TypeScript · Zod  
+Redux · SWR · React Query  
+NextAuth · RHF  
+Sanity · Node.js · Git
 
 ---
-
-## 🎨 Styling
-
-![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-06B6D4?style=for-the-badge&logo=Tailwind-CSS&logoColor=ffffff)
-
----
-
-## ⚙️ Type & Validation
-
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=ffffff)
-![Zod](https://img.shields.io/badge/-Zod-3E63DD?style=for-the-badge&logo=Zod&logoColor=ffffff)
-
----
-
-## 🔁 State & Data
-
-![Redux](https://img.shields.io/badge/-Redux-764ABC?style=for-the-badge&logo=Redux&logoColor=ffffff)
-![SWR](https://img.shields.io/badge/-SWR-000000?style=for-the-badge&logo=SWR&logoColor=ffffff)
-![React Query](https://img.shields.io/badge/-React_Query-FF4154?style=for-the-badge&logo=ReactQuery&logoColor=ffffff)
-
----
-
-## 🛡️ Auth
-
-![NextAuth.js](https://img.shields.io/badge/-NextAuth.js-0D1117?style=for-the-badge&logo=Next.js&logoColor=ffffff)
-
----
-
-## 📚 Form
-
-![React Hook Form](https://img.shields.io/badge/-React_Hook_Form-EC5990?style=for-the-badge&logo=React-Hook-Form&logoColor=ffffff)
-
----
-
-## 🧠 CMS / Backend
-
-![Sanity](https://img.shields.io/badge/-Sanity-F03E2F?style=for-the-badge&logo=Sanity&logoColor=ffffff)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=Node.js&logoColor=ffffff)
-
----
-
-## 🛠 Tools
-
-![Git](https://img.shields.io
-
-
----
-
 
 # 포트폴리오
 
