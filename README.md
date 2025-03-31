@@ -10,10 +10,10 @@ HTML, CSS, JavaScript 기반의 웹 표준과 웹 접근성 준수를 바탕으�
 
 ## 📦 Frontend
 
-![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=React&logoColor=000000)  
-![Next.js](https://img.shields.io/badge/-Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=ffffff)  
-![Vite](https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=ffffff)  
-![React Router](https://img.shields.io/badge/-React_Router-CA4245?style=for-the-badge&logo=React-Router&logoColor=ffffff)  
+![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=React&logoColor=000000)
+![Next.js](https://img.shields.io/badge/-Next.js-000000?style=for-the-badge&logo=Next.js&logoColor=ffffff)
+![Vite](https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=ffffff)
+![React Router](https://img.shields.io/badge/-React_Router-CA4245?style=for-the-badge&logo=React-Router&logoColor=ffffff)
 
 ---
 
@@ -25,15 +25,15 @@ HTML, CSS, JavaScript 기반의 웹 표준과 웹 접근성 준수를 바탕으�
 
 ## ⚙️ Type & Validation
 
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=ffffff)  
+![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=ffffff)
 ![Zod](https://img.shields.io/badge/-Zod-3E63DD?style=for-the-badge&logo=Zod&logoColor=ffffff)
 
 ---
 
 ## 🔁 State & Data
 
-![Redux](https://img.shields.io/badge/-Redux-764ABC?style=for-the-badge&logo=Redux&logoColor=ffffff)  
-![SWR](https://img.shields.io/badge/-SWR-000000?style=for-the-badge&logo=SWR&logoColor=ffffff)  
+![Redux](https://img.shields.io/badge/-Redux-764ABC?style=for-the-badge&logo=Redux&logoColor=ffffff)
+![SWR](https://img.shields.io/badge/-SWR-000000?style=for-the-badge&logo=SWR&logoColor=ffffff)
 ![React Query](https://img.shields.io/badge/-React_Query-FF4154?style=for-the-badge&logo=ReactQuery&logoColor=ffffff)
 
 ---
@@ -52,14 +52,14 @@ HTML, CSS, JavaScript 기반의 웹 표준과 웹 접근성 준수를 바탕으�
 
 ## 🧠 CMS / Backend
 
-![Sanity](https://img.shields.io/badge/-Sanity-F03E2F?style=for-the-badge&logo=Sanity&logoColor=ffffff)  
+![Sanity](https://img.shields.io/badge/-Sanity-F03E2F?style=for-the-badge&logo=Sanity&logoColor=ffffff)
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=Node.js&logoColor=ffffff)
 
 ---
 
 ## 🛠 Tools
 
-![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=Git&logoColor=ffffff)
+![Git](https://img.shields.io
 
 
 ---
@@ -67,7 +67,7 @@ HTML, CSS, JavaScript 기반의 웹 표준과 웹 접근성 준수를 바탕으�
 
 # 포트폴리오
 
-# 1. [Todo](https://github.com/sleepingn-h/todo)
+# 1. Todo [GitHub](https://github.com/sleepingn-h/todo) | [실서버](http://todo-gamma-dusky.vercel.app/)
 ## 사용된 기술 스택
 ![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=React&logoColor=000000)  
 ![Vite](https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=ffffff)  
@@ -153,7 +153,7 @@ const useTodos = (id?: string) => {
   };
 ```
 
-# 2. [Instangram clone coding](https://github.com/sleepingn-h/nextjs-instagram)
+# 2. Instangram clone coding [GitHub](https://github.com/sleepingn-h/nextjs-instagram) | [실서버](http://nextjs-instagram-drab.vercel.app/)
 ## 사용된 기술 스택
 ![Next.js](https://img.shields.io/badge/-Nextjs-000000?style=for-the-badge&logo=Next.js&logoColor=ffffff)
 ![React](https://img.shields.io/badge/-React-222222?style=for-the-badge&logo=react)
