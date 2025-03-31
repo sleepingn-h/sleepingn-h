@@ -19,9 +19,9 @@ Sanity · Node.js · Git
 
 # 1. Todo [GitHub](https://github.com/sleepingn-h/todo) | [실서버](http://todo-gamma-dusky.vercel.app/)
 ## 사용된 기술 스택
-![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=React&logoColor=000000)  
-![Vite](https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=ffffff)  
-![React Router](https://img.shields.io/badge/-React_Router-CA4245?style=for-the-badge&logo=React-Router&logoColor=ffffff)  
+![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=React&logoColor=000000)
+![Vite](https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=ffffff)
+![React Router](https://img.shields.io/badge/-React_Router-CA4245?style=for-the-badge&logo=React-Router&logoColor=ffffff)
 ![Zod](https://img.shields.io/badge/-Zod-3E63DD?style=for-the-badge&logo=Zod&logoColor=ffffff)
 ![React Query](https://img.shields.io/badge/-React_Query-FF4154?style=for-the-badge&logo=ReactQuery&logoColor=ffffff)
 ![React Hook Form](https://img.shields.io/badge/-React_Hook_Form-EC5990?style=for-the-badge&logo=React-Hook-Form&logoColor=ffffff)
