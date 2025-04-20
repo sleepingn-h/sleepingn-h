@@ -166,3 +166,103 @@ export async function POST(req: NextRequest) {
 }
 
 ```
+
+# 3. Editor [GitHub](https://github.com/sleepingn-h/editor)
+
+## 🎯 개발 목적
+
+- 실무에서 사용하는 리치 텍스트 에디터 구조를 직접 구현하며,  
+  DOM 구조 관리 및 스타일 처리 흐름을 깊이 이해하고자 했습니다.
+- 특히 **스타일 중첩 처리**, **커서 이동과 상태 동기화** 등  
+  고급 편집기에서 요구되는 기능을 Vanilla JS로 직접 구현했습니다.
+  
+## 주요 기술 스택
+- **TypeScript / OOP 기반 설계**
+- **DOM API** / `Range`, `Selection` API 활용
+- **커스텀 스타일 처리**: Bold, Italic, FontSize, Color
+- **복사/붙여넣기 처리**: 블록 단위 클론 및 DOM 삽입
+- **선택 상태 및 포커스 관리**
+- **TailwindCSS 기반 UI 커스터마이징**
+
+## 주요 기능
+
+- `Bold`, `Italic`, `FontSize`, `Color` 등 텍스트 인라인 스타일링
+- `contenteditable` 기반 사용자 입력 제어
+- 커서 위치에 따른 **스타일 상태 UI 동기화**
+- 다중 블록 선택 → 복사 / 삭제 / 붙여넣기
+- `requestAnimationFrame` 기반 드래그 성능 최적화
+- 커스텀 `SelectionController`, `StyleApplier` 도입
+
+## 하이라이트 코드
+
+TagStyler 클래스의 핵심 메서드인 createStyledElement는 사용자의 스타일 적용 동작을 DOM 구조로 반영하는 핵심 로직입니다.
+특히 <span> 태그를 항상 최상위에 두고, <b>, <i> 등의 인라인 스타일을 내부에 중첩하는 오늘의집 스타일 처리 방식을 완벽히 재현했습니다.
+
+- 스타일 중복 방지 및 병합 처리
+이미 존재하는 태그(b, i, span)를 감지하여 불필요한 중첩 생성 없이 재활용합니다.
+- 적용 우선순위 관리
+b → i → span 순으로 스타일이 적용되며, 잘못된 구조(b > span)가 되지 않도록 설계했습니다.
+- 선택된 영역의 부모 스타일을 분석 후 병합 처리
+기존 DOM 구조와 사용자가 적용한 스타일을 병합하여 최소한의 DOM 변경만 발생하도록 했습니다.
+- 텍스트 노드와 요소 노드 모두 대응
+TEXT_NODE와 ELEMENT_NODE의 상황에 따라 적절한 부모 노드를 기준으로 스타일을 적용합니다.
+
+```ts
+private static createStyledElement(
+    node: Node,
+    parent: HTMLElement,
+    style: Style
+  ): HTMLElement | Text | null {
+    if (!node.textContent?.trim()) return null;
+    const parentTag = parent?.tagName.toLowerCase()! as keyof HTMLElementTagNameMap;
+    const baseNode =
+      node.nodeType === Node.TEXT_NODE ? document.createTextNode(node.textContent || '') : node;
+    const containsBold = this.constainsTag(node, 'b');
+    const containsItalic = this.constainsTag(node, 'i');
+    const isSpan = this.hasStyledTag(baseNode);
+
+    let currentNode: Node = baseNode;
+
+    if (style.bold && !containsBold && parentTag !== 'b') {
+      const target = isSpan
+        ? document.createTextNode(currentNode.textContent?.trim()!)
+        : currentNode;
+
+      currentNode = this.createNewTag(target, { key: 'bold', value: 'true' })!;
+    }
+
+    if (style.italic && !containsItalic && parentTag !== 'i') {
+      const target = isSpan
+        ? document.createTextNode(currentNode.textContent?.trim()!)
+        : currentNode;
+
+      currentNode = this.createNewTag(target, { key: 'italic', value: 'true' })!;
+    }
+
+    if (style.color) {
+      if (isSpan) {
+        currentNode = this.updateTag(currentNode as HTMLElement, {
+          key: 'color',
+          value: style.color,
+        })!;
+      } else {
+        currentNode = this.createNewTag(currentNode, { key: 'color', value: style.color })!;
+      }
+    }
+
+    if (style.fontSize) {
+      if (isSpan) {
+        currentNode = this.updateTag(currentNode as HTMLElement, {
+          key: 'fontSize',
+          value: style.fontSize,
+        })!;
+      } else {
+        currentNode = this.createNewTag(currentNode, { key: 'fontSize', value: style.fontSize })!;
+      }
+    }
+
+    return currentNode as HTMLElement;
+  }
+
+```
+
