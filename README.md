@@ -10,8 +10,7 @@ HTML, CSS, JavaScript 기반의 웹 표준과 웹 접근성 준수를 바탕으�
 React · Next.js · Vite · React Router  
 Tailwind CSS · TypeScript · Zod  
 Redux · SWR · React Query  
-NextAuth · RHF  
-Sanity · Node.js · Git
+NextAuth · Sanity · Node.js · Git
 
 ---
 
