@@ -378,6 +378,7 @@ export async function POST(req: NextRequest) {
 
 ```
 
+<!--
 # 3. Editor [GitHub](https://github.com/sleepingn-h/editor)
 
 ## 🎯 개발 목적
@@ -477,3 +478,4 @@ private static createStyledElement(
 
 ```
 
+-->
